@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+
+{% block title %}Gestion de materias{% endblock  %}
+
+{% block cuerpo %}
+<h1>Gestionar materias Dorle Zuñiga</h1>
+{% for m in Lasmaterias %}
+<li>{{m.codigo}}.-.-.-{{m.nombre}}.-.-.-{{m.creditos}}</li>
+{% endfor %}
+{% endblock %}
